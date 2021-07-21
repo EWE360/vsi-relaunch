@@ -47,7 +47,7 @@ header {
 }
 
 .logo img {
-  width: 45%;
+  width: 250px;
 }
 
 .navigation {
@@ -396,7 +396,7 @@ header {
 .nachhaltigkeit__panel {
   width: 73%;
   height: 50%;
-  padding: 50px 80px;
+  padding: 50px 40px 50px 80px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
 }
@@ -414,12 +414,13 @@ header {
 }
 
 .nachhaltigkeit h1 {
-  font-size: var(--main-header);
+  font-size: max(1.2rem, 2.9vw);
   font-weight: 500;
 }
 
 .nachhaltigkeit__wrapper-left {
-  width: 60%;
+  width: 55%;
+  margin-right: 30px;
 }
 
 .nachhaltigkeit__wrapper-right {
@@ -775,6 +776,25 @@ header {
   width: 23px;
   height: 23px;
   border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.newsletter__form-dsgvo input:checked {
+  position: relative;
+}
+
+.newsletter__form-dsgvo input:checked:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 16px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  background: none var(--main-color);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .newsletter__form-dsgvo label {
