@@ -27,6 +27,12 @@ body {
   color: var(--font-color-dark);
 }
 
+/* UTILITY CLASSES */
+
+.hide {
+  display: none;
+}
+
 /* HEADER SECTION */
 
 header {
@@ -149,7 +155,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  background-image: url("img/header-background.svg");
+  background-image: url("img/15964189-preview.gif");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -206,7 +212,7 @@ header {
 
 .news-box__content button:hover img {
   /* transform: scale(1.5); */
-  animation: shake 2s ease-in-out infinite;
+  animation: pulsating 2s ease-in-out infinite;
 }
 
 .news-box__content button img {
@@ -237,7 +243,7 @@ header {
 }
 
 .teaser .quick-navi button:hover {
-  transform: scale(1.1);
+  transform: translateX(-20px);
 }
 
 .teaser .quick-navi button img {
@@ -246,7 +252,7 @@ header {
 
 .teaser__slide-control {
   position: absolute;
-  top: 550px;
+  bottom: 80px;
   right: 130px;
   display: flex;
   width: 100px;
@@ -260,6 +266,7 @@ header {
 
 .teaser__slide-control img {
   height: 50px;
+  cursor: pointer;
 }
 
 /* ABOUT SECTION */
@@ -290,11 +297,31 @@ header {
   margin-bottom: 80px;
 }
 
-.about__info p {
+.about__info p:not(.about__info__read-more) {
   width: 580px;
   line-height: 1.5rem;
   font-size: 1.1rem;
   color: var(--font-color-dark);
+}
+
+.about__info__read-more {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  font-family: Roboto-bold;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.about__info__read-more img {
+  width: 28px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.about__info__read-more:hover img {
+  animation: pulsating 2s infinite;
 }
 
 .about__image {
@@ -437,6 +464,10 @@ header {
   margin-right: 5px;
 }
 
+.members__slider__download:hover img {
+  animation: pulsating 2s ease-in-out infinite;
+}
+
 /* NACHHALTIGKEIT SECTION */
 
 .nachhaltigkeit {
@@ -454,8 +485,8 @@ header {
 
 .nachhaltigkeit__panel {
   width: 73%;
-  height: 50%;
-  padding: 50px 40px 50px 80px;
+  height: auto;
+  padding: 50px 40px 100px 80px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
 }
@@ -489,11 +520,6 @@ header {
   color: var(--font-color-dark);
 }
 
-.nachhaltigkeit__wrapper-right a {
-  text-decoration: none;
-  color: var(--main-color);
-}
-
 .nachhaltigkeit__wrapper-right img {
   width: 25px;
   margin-top: 5px;
@@ -508,7 +534,13 @@ header {
   padding-right: 30px;
   font-family: Roboto-bold;
   font-size: 1.4rem;
+  color: var(--main-color);
   font-weight: 500;
+  cursor: pointer;
+}
+
+.nachhaltigkeit__read-more:hover img {
+  animation: pulsating 2s ease-in-out infinite;
 }
 
 /* NEWS SECTION */
@@ -548,6 +580,10 @@ header {
   font-family: Roboto-bold;
   font-size: 1.3rem;
   color: var(--main-color);
+}
+
+.news__header__left a:hover img {
+  animation: pulsating 2s ease-in-out infinite;
 }
 
 .news__header__left p {
@@ -636,6 +672,11 @@ header {
   font-size: 1.4rem;
 }
 
+.news__content__top__read-more:hover img,
+.news__content__bottom__read-more:hover img {
+  animation: pulsating 2s ease-in-out infinite;
+}
+
 .news__services {
   width: 38%;
   margin-left: 40px;
@@ -656,6 +697,10 @@ header {
   font-size: 1.3rem;
 }
 
+.news__services li:hover img {
+  animation: shake 2s ease-in-out infinite;
+}
+
 .news__services img {
   width: 28px;
   margin-top: 5px;
@@ -670,7 +715,6 @@ header {
   background-image: url("img/termine_hintergrund.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background: cornflowerblue; */
   width: 100vw;
   height: 95vh;
   max-width: 100%;
@@ -700,6 +744,10 @@ header {
   font-family: Roboto-bold;
   font-size: 1.4rem;
   color: var(--main-color);
+}
+
+.termine__main__header a:hover img {
+  animation: pulsating 2s ease-in-out infinite;
 }
 
 .termine__main__header p {
@@ -736,6 +784,10 @@ header {
 .termine__main__right {
   display: flex;
   width: 50%;
+}
+
+.termine__main__left {
+  margin-right: 20px;
 }
 
 .termine__main__left h1,
@@ -880,6 +932,10 @@ header {
   cursor: pointer;
 }
 
+.newsletter__form-footer button:hover {
+  opacity: 0.8;
+}
+
 footer {
   width: 100vw;
   height: 40vh;
@@ -955,6 +1011,10 @@ footer {
   color: var(--main-color);
 }
 
+.footer__main__right a:hover li {
+  font-family: Roboto-bold;
+}
+
 .footer__main__right ul li {
   margin-left: 55px;
   font-size: 1.1rem;
@@ -977,6 +1037,10 @@ footer {
   cursor: pointer;
 }
 
+.footer__main__right button:hover img {
+  animation: pulsating 2s ease-in-out infinite;
+}
+
 .footer__main__right button img {
   width: 23px;
   margin-top: 5px;
@@ -989,13 +1053,25 @@ footer {
   0% {
     transform: translateX(0);
   }
-  33% {
-    transform: translateX(-5px);
+  50% {
+    transform: translateX(20px);
   }
-  66% {
-    transform: translateX(5px);
-  }
+
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes pulsating {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
