@@ -401,6 +401,10 @@ header {
   height: 180px;
 }
 
+.members__image:hover {
+  animation: tilt 2s ease-in-out;
+}
+
 .members__slider {
   position: relative;
   display: flex;
@@ -1084,5 +1088,18 @@ footer {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0);
   }
 }
