@@ -114,13 +114,17 @@ header {
   overflow: hidden;
 }
 
+.navigation__bottom ul li .active {
+  border-bottom: 4px solid var(--main-color);
+}
+
 /* .navigation a {
     display: block;
     position: relative;
     outline: 3px solid lime;
   } */
 
-.navigation a::after {
+.navigation a:not(.active)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -615,7 +619,7 @@ footer {
 }
 
 .footer__main__left img {
-  height: 100px;
+  height: 80px;
 }
 
 .footer__main__left .address {

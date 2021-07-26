@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-bold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+:root {
+  --main-color: rgb(0, 96, 173);
+  --button-color: rgb(255, 197, 7);
+  --font-color-dark: rgb(88, 89, 91);
+  --sub-header: 1.2rem;
+  --main-header: 2.9rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+  color: var(--font-color-dark);
+}
+
+/* HEADER SECTION */
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 18vh;
+  max-width: 100%;
+  padding: 0 200px;
+  font-size: 1.1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+}
+
+.logo img {
+  width: 250px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation a {
+  text-decoration: none;
+  /* color: var(--font-color-dark); */
+  color: inherit;
+  display: block;
+  position: relative;
+}
+
+.navigation__top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 50%;
+}
+
+.navigation__top .kontakt {
+  margin-top: 45px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+.navigation__top .navigation__login:hover {
+  opacity: 0.8;
+}
+
+.navigation__top .navigation__login::after {
+  display: none;
+}
+
+/* .navigation__top .navigation__contact {
+    display: block;
+    width: 100%;
+    height: 100%;
+  } */
+
+.navigation__bottom {
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
+
+.navigation__bottom ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation__bottom ul li {
+  margin-right: 35px;
+  padding: 5px 0 0 0;
+  overflow: hidden;
+}
+
+.navigation__bottom ul li .active {
+  border-bottom: 4px solid var(--main-color);
+}
+
+/* .navigation a {
+    display: block;
+    position: relative;
+    outline: 3px solid lime;
+  } */
+
+.navigation a:not(.active):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--main-color);
+  opacity: 1;
+  transition: opacity 300ms, transform 400ms;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.navigation a:hover::after,
+.navigation a:focus::after {
+  /* color: var(--main-color);
+    border-bottom: 1px solid var(--main-color); */
+  transform: translate3d(0, 0, 0);
+}
+
+.navigation__bottom img {
+  width: 25px;
+  margin-left: 20px;
+}
+
+.navigation__bottom img:hover {
+  transform: scale(1.2);
+}
+
+.content img {
+  width: 100vw;
+  max-width: 100%;
+}
