@@ -440,8 +440,9 @@ header {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 60vh;
+  min-height: 60vh;
   max-width: 100%;
+  padding-bottom: 30px;
 }
 
 .sign-up form {
