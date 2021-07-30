@@ -526,13 +526,13 @@ header {
 
 .bottom {
   width: 100vw;
-  height: 150vh;
+  min-height: 150vh;
   max-width: 100%;
   background-image: url("../img/membrers-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 250px 0 0 0;
+  padding: 250px 0 20px 0;
 }
 
 .bottom__counterpart {
