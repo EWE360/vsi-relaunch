@@ -1149,10 +1149,13 @@ footer {
   width: 100%;
 }
 
-.footer__main__left,
-.footer__main__right {
-  width: 50%;
+.footer__main__left {
+  width: 65%;
   color: var(--main-color);
+}
+
+.footer__main__right {
+  width: 35%;
 }
 
 .footer__main__left {
@@ -1160,7 +1163,11 @@ footer {
 }
 
 .footer__main__left img {
-  height: 80px;
+  height: 5vw;
+}
+
+.footer .address {
+  margin-right: 20px;
 }
 
 .footer__main__left .address {
@@ -1169,13 +1176,13 @@ footer {
 
 .footer__main .address__verband {
   font-family: Roboto-bold;
-  font-size: 1.1rem;
+  font-size: max(12px, 1.1vw);
   margin-bottom: 8px;
 }
 
 .footer__main .address p:not(.address__verband) {
   margin-bottom: 8px;
-  font-size: 1.1rem;
+  font-size: max(12px, 1.1vw);
 }
 
 .footer__main__right {
