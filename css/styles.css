@@ -721,7 +721,7 @@ header {
   width: 100vw;
   min-height: 100vh;
   max-width: 100%;
-  padding: 50px 0 0 230px;
+  padding: 50px 0 40px 230px;
 }
 
 .news__header {
