@@ -521,20 +521,20 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65%;
+  width: 60%;
   height: 100%;
 }
 
 .members__info__cite {
-  width: 850px;
+  width: 100%;
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: max(12px, 1.8vw);
   line-height: 3rem;
 }
 
 .members__info__author {
-  width: 850px;
+  width: 100%;
   font-size: 1.1rem;
   text-align: right;
 }
@@ -542,6 +542,7 @@ header {
 .members__image {
   width: 180px;
   height: 180px;
+  margin-left: 40px;
 }
 
 .members__image:hover {
@@ -810,7 +811,8 @@ header {
 
 .news__content__top > img,
 .news__content__bottom > img {
-  width: 300px;
+  width: 45%;
+  margin-right: 20px;
 }
 
 .news__content__top__wrapper,
