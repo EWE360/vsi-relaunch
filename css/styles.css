@@ -562,7 +562,7 @@ header {
 }
 
 .members__image:hover {
-  animation: tilt 2s ease-in-out;
+  animation: pulsating2 2s ease-in-out;
 }
 
 .members__slider {
@@ -698,7 +698,7 @@ header {
 }
 
 .nachhaltigkeit h1 {
-  font-size: max(1.2rem, 2.9vw);
+  font-size: max(1.2rem, 2.6vw);
   font-weight: 500;
 }
 
@@ -1285,6 +1285,20 @@ footer {
 
   50% {
     transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsating2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
   }
 
   100% {
