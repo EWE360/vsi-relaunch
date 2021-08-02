@@ -346,7 +346,7 @@ header {
 }
 
 .news-box__content h4 {
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   font-size: max(12px, 0.8vw);
   font-weight: 500;
 }
@@ -355,14 +355,14 @@ header {
   width: 90%;
   font-size: max(16px, 2vw);
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .news-box__content p {
   width: 90%;
   line-height: 1.5rem;
   font-size: max(10px, 0.9vw);
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .news-box__content button {
@@ -659,6 +659,7 @@ header {
   width: 100vw;
   min-height: 90vh;
   max-width: 100%;
+  padding: 50px;
   /* background-image: url("../img/nachhaltigkeit-background.png"); */
   background-repeat: no-repeat;
   background-size: cover;
