@@ -1,14 +1,14 @@
-const text = document.querySelector(".nachhaltigkeit__wrapper-right p span");
+const text = document.querySelector(".nachhaltigkeit__content-wrapper p span");
 const readMore = document.querySelector(".nachhaltigkeit__read-more");
-const rwLink = document.querySelector(".navigation__bottom li:nth-child(4)");
-const newsLink = document.querySelector(".navigation__bottom li:nth-child(5)");
+const rwLink = document.querySelector(".navigation li:nth-child(4)");
+const newsLink = document.querySelector(".navigation li:nth-child(5)");
 const rwContent = document.querySelector(".teaser__regelwerke-menu");
 const newsContent = document.querySelector(".teaser__news-menu");
 const menuNotRegelwerke = document.querySelectorAll(
-  ".navigation__bottom li:not(:nth-child(4))"
+  ".navigation li:not(:nth-child(4))"
 );
 const menuNotNews = document.querySelectorAll(
-  ".navigation__bottom li:not(:nth-child(5))"
+  ".navigation li:not(:nth-child(5))"
 );
 
 readMore.addEventListener("click", toggleView);
