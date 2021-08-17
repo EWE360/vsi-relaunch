@@ -25,6 +25,7 @@
 body {
   font-family: Roboto;
   color: var(--font-color-dark);
+  overflow-x: hidden;
 }
 
 /* UTILITY CLASSES */
@@ -40,7 +41,7 @@ header {
   width: 100vw;
   height: 18vh;
   max-width: 100%;
-  padding: 0 0 0 200px;
+  padding: 0 0 0 40px;
   font-size: max(12px, 1.3vmax);
 }
 
@@ -1237,6 +1238,10 @@ footer {
 
 /* LARGE SCREENS */
 @media only screen and (min-width: 64.063em) {
+  .header {
+    padding: 0 0 0 200px;
+  }
+
   .teaser__regelwerke-menu__main {
     display: flex;
     width: 100%;

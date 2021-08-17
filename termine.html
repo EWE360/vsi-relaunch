@@ -1,38 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/termine.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/termine.css" />
     <title>Termine</title>
-</head>
-<body>
-    <header class="header">
-        <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="VSI Logo" /></a>
-        </div>
-        <nav class="navigation">
-          <div class="navigation__top">
-            <span class="kontakt"><a href="#" class="navigation__contact">Kontakt</a></span>
-            <div class="login"></div>
-              <a href="#" class="navigation__login"><img src="img/member-login.png" alt="" /></a>
-            </div>
+  </head>
+  <body>
+    <header class="header grid-x">
+      <div class="logo cell large-3">
+        <a href="./index.html"><img src="img/logo.png" alt="VSI Logo" /></a>
+      </div>
+      <nav class="navigation cell large-9 show-for-large">
+        <ul>
+          <li><a href="#">Verband</a></li>
+          <li><a href="#">Publikationen</a></li>
+          <li><a href="#">Schmierstoffe</a></li>
+          <li><a href="#">Regelwerke</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="">myVSI</a></li>
+          <img src="img/magnifyer.svg" alt="" class="search" />
+        </ul>
+      </nav>
+    </header>
+
+    <section class="teaser grid-x">
+      <div class="quick-navi">
+        <button class="quick-navi__mail">
+          <img src="img/at-sign-icon.svg" alt="" />
+        </button>
+        <button class="quick-navi__phone">
+          <img src="img/phone-icon.svg" alt="" />
+        </button>
+        <button class="quick-navi__members">
+          <img src="img/members-icon.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="teaser__background"></div>
+      <!-- <div class="teaser__regelwerke-menu hide">
+        <div class="teaser__regelwerke-menu__top-bar"><p>Regelwerke</p></div>
+        <div class="teaser__regelwerke-menu__main grid-x grid-margin-x">
+          <div
+            class="teaser__regelwerke-menu__image cell large-3 show-for-large"
+          >
+            <img src="img/Regelwerke.svg" alt="" />
           </div>
-          <div class="navigation__bottom">
+          <div class="teaser__regelwerke-menu__nav-left cell medium-5 large-3">
             <ul>
-              <li><a href="#">Verband</a></li>
-              <li><a href="#">Publikationen</a></li>
-              <li><a href="#">Schmierstoffe</a></li>
-              <li><a href="#">Regelwerke</a></li>
-              <li><a class="active" href="news.html">News</a></li>
-              <img src="img/magnifyer.svg" alt="" class="search"/>
+              <a href=""
+                ><li>
+                  Biozide und Fungizide
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>DGUV <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Ecolable
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>EU <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Gefahrstoffverordnung
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  CLP und Giltinfo
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  MAK und BAT Liste
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
             </ul>
           </div>
-        </nav>
-      </header>
-      <div class="content">
-          <img src="img/termine_seite_screenshot.jpg" alt="">
+          <div class="teaser__regelwerke-menu__nav-right cell medium-5 large-3">
+            <ul>
+              <a href=""
+                ><li>
+                  Nationale Richtlinien
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Normung <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  REACH <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>TRGS <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  VDI-Richtlinien
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  VKIS-Richtlinien
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Stoffliste
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="teaser__news-menu hide">
+        <div class="teaser__news-menu__top-bar"><p>News</p></div>
+        <div class="teaser__news-menu__main grid-x">
+          <div class="teaser__news-menu__image cell medium-3">
+            <img src="img/news-menu.svg" alt="" />
+          </div>
+          <div class="teaser__news-menu__content cell medium-5 large-4">
+            <ul>
+              <a href=""
+                ><li>
+                  Newsmeldungen
+                  <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+              <a href="./termine.html"
+                ><li>
+                  Termine <img src="img/arrow_regelwerke_blue.svg" alt="" /></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="know-how grid-x">
+      <div class="know-how__text cell medium-5">
+        <h3>FACH-KNOW-HOW AUF EINEN BLICK</h3>
+        <h1>
+          Hier finden Sie unsere Veranstaltungen sowie eine Komplettübersicht
+          der Termine.
+        </h1>
+        <p>
+          Aktuelles Veranstaltungen und Termine rund um den Verband der
+          Schmierstoff-Industrie. In unserer Veranstaltungsübersicht finden Sie
+          alle Termine, die sich um die Themen unserer Mitglieder drehen. Wir
+          aktualisieren an dieser Stelle laufend die neuesten Termine, werfen
+          Sie also auch zu einem späteren Zeitpunkt einen Blick auf unsere
+          Übersicht.
+        </p>
       </div>
-</body>
+      <div class="know-how__image cell medium-4">
+        <img src="img/shutterstock_1322813294.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="veranstaltungen">
+      <h1>Veranstaltungen / Termine</h1>
+      <div class="veranstaltungen__wrapper grid-x">
+        <div class="cell medium-6 large-4">
+          <div class="veranstaltungen__wrapper__main">
+            <h3>27.08.2021</h3>
+            <h4>BÖBLINGEN</h4>
+            <h2>74. ordentliche Mitgliederversammlung des VSI</h2>
+            <p>
+              Wir laden Sie recht herzlich zu unserer insgesamt 74. Ordentlichen
+              Mitgliederversammlung ein. Weitere Informationen zur Anmeldung und
+              zum Ablaufplan erhalten Sie zeitnah.
+            </p>
+          </div>
+          <div class="veranstaltungen__wrapper__bottom">
+            <div class="veranstaltungen__infos">
+              <img src="img/arrow-yellow-right.svg" alt="" />
+              <p>Infos und Anmeldung</p>
+            </div>
+            <div class="veranstaltungen__kalender">
+              <img src="img/event-calendar-icon.svg" alt="" />
+              <p>In Kalender übernehmen</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell medium-6 large-4">
+          <div class="veranstaltungen__wrapper__main">
+            <h3>06.–08.09.2021</h3>
+            <h4>ESSEN</h4>
+            <h2>Lubricent Expo</h2>
+            <p>
+              Die „Lubricant Expo“ ist Europas erste Messe und Konferenz, die
+              Anbieter von Schmierstofflösungen mit dem Spektrum der
+              Endverbraucher sowie der Lieferkette für Chemikalien und Geräte
+              verbindet.
+            </p>
+          </div>
+          <div class="veranstaltungen__wrapper__bottom">
+            <div class="veranstaltungen__infos">
+              <img src="img/arrow-yellow-right.svg" alt="" />
+              <p>Infos und Anmeldung</p>
+            </div>
+            <div class="veranstaltungen__kalender">
+              <img src="img/event-calendar-icon.svg" alt="" />
+              <p>In Kalender übernehmen</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell medium-6 large-4">
+          <div class="veranstaltungen__wrapper__main">
+            <h3>DATUM</h3>
+            <h4>ORT</h4>
+            <h2>
+              VSI-Seminar: KSS Aktuelles aus Regelwerk, Technik und Forschung,
+              Biozidverordnung, VDI-Richtlinien, Normen
+            </h2>
+            <p>
+              Ficia quati nos aut perit, sintesti dollam hil explabo. Raeribus
+              aped min con reptam, cuptasp erorehe ndigni autem none voluptia
+            </p>
+          </div>
+          <div class="veranstaltungen__wrapper__bottom">
+            <div class="veranstaltungen__infos">
+              <img src="img/arrow-yellow-right.svg" alt="" />
+              <p>Infos und Anmeldung</p>
+            </div>
+            <div class="veranstaltungen__kalender">
+              <img src="img/event-calendar-icon.svg" alt="" />
+              <p>In Kalender übernehmen</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell medium-6 large-4">
+          <div class="veranstaltungen__wrapper__main">
+            <h3>27.08.2021</h3>
+            <h4>BÖBLINGEN</h4>
+            <h2>74. ordentliche Mitgliederversammlung des VSI</h2>
+            <p>
+              Wir laden Sie recht herzlich zu unserer insgesamt 74. Ordentlichen
+              Mitgliederversammlung ein. Weitere Informationen zur Anmeldung und
+              zum Ablaufplan erhalten Sie zeitnah.
+            </p>
+          </div>
+          <div class="veranstaltungen__wrapper__bottom">
+            <div class="veranstaltungen__infos">
+              <img src="img/arrow-yellow-right.svg" alt="" />
+              <p>Infos und Anmeldung</p>
+            </div>
+            <div class="veranstaltungen__kalender">
+              <img src="img/event-calendar-icon.svg" alt="" />
+              <p>In Kalender übernehmen</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell medium-6 large-4">
+          <div class="veranstaltungen__wrapper__main">
+            <h3>06.–08.09.2021</h3>
+            <h4>ESSEN</h4>
+            <h2>Lubricent Expo</h2>
+            <p>
+              Die „Lubricant Expo“ ist Europas erste Messe und Konferenz, die
+              Anbieter von Schmierstofflösungen mit dem Spektrum der
+              Endverbraucher sowie der Lieferkette für Chemikalien und Geräte
+              verbindet.
+            </p>
+          </div>
+          <div class="veranstaltungen__wrapper__bottom">
+            <div class="veranstaltungen__infos">
+              <img src="img/arrow-yellow-right.svg" alt="" />
+              <p>Infos und Anmeldung</p>
+            </div>
+            <div class="veranstaltungen__kalender">
+              <img src="img/event-calendar-icon.svg" alt="" />
+              <p>In Kalender übernehmen</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell medium-6 large-4">
+          <div class="veranstaltungen__wrapper__main">
+            <h3>DATUM</h3>
+            <h4>ORT</h4>
+            <h2>
+              VSI-Seminar: KSS Aktuelles aus Regelwerk, Technik und Forschung,
+              Biozidverordnung, VDI-Richtlinien, Normen
+            </h2>
+            <p>
+              Ficia quati nos aut perit, sintesti dollam hil explabo. Raeribus
+              aped min con reptam, cuptasp erorehe ndigni autem none voluptia
+            </p>
+          </div>
+          <div class="veranstaltungen__wrapper__bottom">
+            <div class="veranstaltungen__infos">
+              <img src="img/arrow-yellow-right.svg" alt="" />
+              <p>Infos und Anmeldung</p>
+            </div>
+            <div class="veranstaltungen__kalender">
+              <img src="img/event-calendar-icon.svg" alt="" />
+              <p>In Kalender übernehmen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="veranstaltungen__paginator">
+        <button class="paginator__active">1</button>
+        <button>2</button>
+        <button>3</button>
+      </div>
+    </section>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
