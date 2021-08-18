@@ -4,33 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/news.css" />
     <title>VSI - News</title>
   </head>
 
   <body>
-    <header class="header">
-        <div class="logo">
+    <header class="header grid-x">
+      <div class="logo cell large-3">
         <a href="./index.html"><img src="img/logo.png" alt="VSI Logo" /></a>
-        </div>
-        <nav class="navigation">
-        <div class="navigation__top">
-            <span class="kontakt"><a href="#" class="navigation__contact">Kontakt</a></span>
-            <div class="login"></div>
-            <a href="#" class="navigation__login"><img src="img/member-login.png" alt="" /></a>
-            </div>
-        </div>
-        <div class="navigation__bottom">
-            <ul>
-            <li><a href="#">Verband</a></li>
-            <li><a href="#">Publikationen</a></li>
-            <li><a href="#">Schmierstoffe</a></li>
-            <li><a href="#">Regelwerke</a></li>
-            <li><a class="active" href="termine.html">News</a></li>
-            <img src="img/magnifyer.svg" alt="" class="search"/>
-            </ul>
-        </div>
-        </nav>
+      </div>
+      <nav class="navigation cell large-9 show-for-large">
+        <ul>
+          <li><a href="#">Verband</a></li>
+          <li><a href="#">Publikationen</a></li>
+          <li><a href="#">Schmierstoffe</a></li>
+          <li><a href="#">Regelwerke</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="">myVSI</a></li>
+          <img src="img/magnifyer.svg" alt="" class="search" />
+        </ul>
+      </nav>
     </header>
 
     <section class="teaser">
@@ -39,6 +35,7 @@
             <button class="quick-navi__phone"><img src="img/phone-icon.svg" alt="" /></button>
             <button class="quick-navi__members"><img src="img/members-icon.svg" alt="" /></button>
         </div>
+
     </section>
 
     <section class="event__title">
@@ -48,8 +45,8 @@
     </section>
 
     <section class="event__main-info">
-        <div class="event__main-info__content-wrapper">
-            <div class="event__content-wrapper__column-left">
+        <div class="event__main-info__content-wrapper grid-x">
+            <div class="event__content-wrapper__column-left cell medium-6">
                 <h2>VERANSTALTUNGSORT</h2>
                 <p>Böblingen</p>
                 <h2>ZIELGRUPPE</h2>
@@ -77,7 +74,7 @@
                 <p>Alle Preise zzgl. MwSt.</p>
                 <p class="event__login" >Bitte <a href="">loggen Sie sich ein</a> um sich zu registrieren</p>
             </div>
-            <div class="event__content-wrapper__column-right">
+            <div class="event__content-wrapper__column-right cell medium-5">
                 <img src="img/event-speaker.svg" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt modi labore quas doloribus reprehenderit quos iste ducimus facilis maxime perferendis quae excepturi explicabo eveniet, odit officiis distinctio? Nisi, aut neque?</p>
                 <div class="event__content-wrapper__calendar-wrapper">
@@ -117,7 +114,7 @@
             <input type="text" id="company" name="company" placeholder="Firma" />
             <div class="sign-up__form-footer">
                 <button class="sign-up__form-footer__back"><img src="/img/arrow-yellow-right.svg" alt=""> Zurück zur Übersicht</button>
-                <button class="sign-up__form-footer__sign-in">Verbindlich anmelden</button>
+                <button class="sign-up__form-footer__sign-in">Anmelden</button>
             </div>
             </div>
           </form>
@@ -136,38 +133,46 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="footer__social-media">
-                <a href=""><img src="img/linkedin-logo.svg" alt="" class="footer__linkedin" /></a>
-                <a href=""><img src="img/xing-logo.svg" alt="" class="footer__xing" /></a>
-                <a href=""><img src="img/twitter-logo.svg" alt="" class="footer__twitter" /></a>
-                <a href=""><img src="img/print-logo.svg" alt="" class="footer__print" /></a>
-                <a href=""><img src="img/link-logo.svg" alt="" class="footer__link" /></a>
-                <a href=""><img src="img/at-logo.svg" alt="" class="footer__mail" /></a>
-              </div>
-              <div class="footer__main">
-                <div class="footer__main__left">
-                  <img src="img/logo_vsi.png" alt="" />
-                  <div class="address">
-                    <p class="address__verband">Verband Schmierstoff-Industrie e. V.</p>
-                    <p>Süderstraße 73a · 20097 Hamburg</p>
-                    <p>Telefon: 040 / 288046-0</p>
-                    <p>Telefax: 040 / 288046-10</p>
-                    <p>E-Mail: info@vsi-schmierstoffe.de</p>
-                  </div>
-                </div>
-                <div class="footer__main__right">
-                  <ul>
-                    <a href="#"><li>Datenschutz</li></a>
-                    <a href="#"><li>Impressum</li></a>
-                    <a href="#"><li>Kontakt</li></a>
-                  </ul>
-                  <button>
-                    <a href=""><img src="img/arrow_white_right.svg" alt="" /></a>Mitglied werden
-                  </button>
-                </div>
-              </div>
-        </footer>
-    </section>
+      </section>
+
+      <footer class="grid-x">
+        <div class="footer__social-media cell medium-12">
+          <a href=""
+            ><img src="img/linkedin-logo.svg" alt="" class="footer__linkedin"
+          /></a>
+          <a href=""
+            ><img src="img/print-logo.svg" alt="" class="footer__print"
+          /></a>
+          <a href=""
+            ><img src="img/link-logo.svg" alt="" class="footer__link"
+          /></a>
+          <a href=""><img src="img/at-logo.svg" alt="" class="footer__mail" /></a>
+        </div>
+        <div class="footer__main cell grid-x">
+          <div class="footer__main__left cell medium-6">
+            <img src="img/logo_vsi.png" alt="" />
+            <div class="address">
+              <p class="address__verband">Verband Schmierstoff-Industrie e. V.</p>
+              <p>Süderstraße 73a · 20097 Hamburg</p>
+              <p>Telefon: 040 / 288046-0</p>
+              <p>Telefax: 040 / 288046-10</p>
+              <p>E-Mail: info@vsi-schmierstoffe.de</p>
+            </div>
+          </div>
+          <div class="footer__main__right cell medium-6">
+            <ul>
+              <a href="#"><li>Datenschutz</li></a>
+              <a href="#"><li>Impressum</li></a>
+              <a href="#"><li>Kontakt</li></a>
+              <a href="#"><li>my VSI</li></a>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
