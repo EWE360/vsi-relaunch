@@ -47,23 +47,11 @@
         <span>1/3</span>
         <img src="img/slider-arrow-right.svg" alt="" />
       </div>
-      <div
-        class="news-box__layer hide-for-small-only cell medium-8 large-4"
-      ></div>
-      <div
-        class="
-          news-box__content
-          hide-for-small-only
-          cell
-          small-8
-          medium-7
-          large-4
-        "
-      >
+      <div class="news-box__layer hide-for-small-only"></div>
+      <div class="news-box__content hide-for-small-only">
         <h4>SCHMIERSTOFFE IM GLOBALEN UMFELD</h4>
         <h1>
-          Globale Logistik-<br />ketten sind empfindlich für unvorhersehbare
-          Ereignisse
+          Globale Logistikketten sind empfindlich für unvorhersehbare Ereignisse
         </h1>
         <p>
           Als Verband sehen wir es als unsere Aufgabe, die Wahrnehmung und
@@ -180,16 +168,9 @@
       </div>
     </section>
 
-    <section class="about grid-x">
+    <section class="about grid-x grid-padding-x">
       <div
-        class="
-          about__info
-          cell
-          small-9
-          medium-5
-          small-offset-1 small-order-2
-          medium-order-1
-        "
+        class="about__info cell small-9 medium-5 small-order-2 medium-order-1"
       >
         <h4>VSI – VERBAND SCHMIERSTOFF-INDUSTRIE e.V.</h4>
         <h1>VSI – erfahren und engagiert</h1>
@@ -203,14 +184,7 @@
         </p>
       </div>
       <div
-        class="
-          about__image
-          cell
-          small-9
-          medium-4 medium-offset-0
-          small-order-1
-          medium-order-2
-        "
+        class="about__image cell small-9 medium-4 small-order-1 medium-order-2"
       >
         <img src="img/about-img.svg" alt="" />
       </div>
@@ -218,15 +192,7 @@
 
     <section class="members">
       <div class="members__info__content grid-x">
-        <div
-          class="
-            members__info__text-wrapper
-            cell
-            small-11
-            medium-8
-            small-offset-1
-          "
-        >
+        <div class="members__info__text-wrapper cell small-11 medium-8">
           <p class="members__info__cite">
             „Als Mitglied im Verband der Schmierstoff-Industrie werden die
             Interessen meiner Industrie global vorangetrieben.“
@@ -256,7 +222,7 @@
     </section>
 
     <section class="members-journal">
-      <div class="members-journal__slider grid-x grid-margin-x">
+      <div class="members-journal__slider grid-x grid-margin-x grid-margin-y">
         <div class="members-journal__slider__arrow-left">
           <a href="#"
             ><img
@@ -314,12 +280,19 @@
       </div>
     </section>
 
-    <section class="nachhaltigkeit">
-      <div class="nachhaltigkeit__panel grid-x grid-margin-x">
-        <div class="nachhaltigkeit__img-wrapper cell medium-3">
+    <section class="nachhaltigkeit grid-x">
+      <div
+        class="
+          nachhaltigkeit__panel
+          grid-x grid-margin-x grid-margin-y
+          small-12
+          medium-9
+        "
+      >
+        <div class="nachhaltigkeit__img-wrapper cell small-12 medium-3">
           <img src="img/vsi-nasch-logo.svg" alt="" />
         </div>
-        <div class="nachhaltigkeit__content-wrapper cell medium-9">
+        <div class="nachhaltigkeit__content-wrapper cell small-12 medium-9">
           <h4>NACHHALTIGKEIT</h4>
 
           <h1>
@@ -352,9 +325,9 @@
     </section>
 
     <section class="news">
-      <div class="news__main grid-container fluid">
+      <div class="news__main">
         <div class="news__content grid-x grid-margin-x">
-          <div class="news__content__top cell small-10 medium-6 small-order1">
+          <div class="news__content__top cell small-11 medium-6 small-order1">
             <div class="news__header__left">
               <h1>News</h1>
               <a href="./termine.html">
@@ -362,7 +335,7 @@
               </a>
             </div>
             <div class="news__content__top__wrapper">
-              <img src="img/news-img1.svg" alt="" />
+              <img src="img/news-img1.svg" alt="" class="hide-for-small-only" />
               <div class="news__content__top__main">
                 <h4>21.12.2020</h4>
                 <h2>20. Auflage der VKIS-VSI IGM-BGHM-Stoffliste</h2>
@@ -383,7 +356,7 @@
             class="
               news__services
               cell
-              small-10
+              small-11
               medium-6
               small-order-3
               medium-order-2
@@ -393,31 +366,35 @@
               <h1>Services</h1>
             </div>
             <ul>
-              <li class="news__services__first">
-                myVSI<a href=""
-                  ><img src="img/arrow-yellow-right.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                Veranstaltungen<a href=""
-                  ><img src="img/arrow-yellow-right.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                Publikationen<a href=""
-                  ><img src="img/arrow-yellow-right.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                Regelwerke<a href=""
-                  ><img src="img/arrow-yellow-right.svg" alt=""
-                /></a>
-              </li>
-              <li>
-                Keine Neuigkeiten verpassen!<a href=""
-                  ><img src="img/arrow-yellow-right.svg" alt=""
-                /></a>
-              </li>
+              <a href=""
+                ><li class="news__services__first">
+                  myVSI<img src="img/arrow-yellow-right.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Veranstaltungen<img
+                    src="img/arrow-yellow-right.svg"
+                    alt=""
+                  /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Publikationen<img
+                    src="img/arrow-yellow-right.svg"
+                    alt=""
+                  /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Regelwerke<img src="img/arrow-yellow-right.svg" alt="" /></li
+              ></a>
+              <a href=""
+                ><li>
+                  Keine Neuigkeiten verpassen!<img
+                    src="img/arrow-yellow-right.svg"
+                    alt=""
+                  /></li
+              ></a>
             </ul>
           </div>
 
@@ -425,13 +402,13 @@
             class="
               news__content__bottom
               cell
-              small-10
+              small-11
               medium-6
               small-order-2
               medium-order-3
             "
           >
-            <img src="img/news-img2.svg" alt="" />
+            <img src="img/news-img2.svg" alt="" class="hide-for-small-only" />
             <div class="news__content__bottom__wrapper">
               <h4>17.12.2020</h4>
               <h2>TSA-Herbsttagung 2020 – Protokoll</h2>
@@ -458,8 +435,15 @@
             <p><img src="img/arrow-yellow-right.svg" alt="" />alle Termine</p>
           </a>
         </div>
-        <div class="termine__main__content grid-x">
-          <div class="termine__main__left cell small-12 medium-5 large-6">
+        <div
+          class="termine__main__content grid-x"
+          data-equalizer
+          data-equalize-on="medium"
+        >
+          <div
+            class="termine__main__left cell small-12 medium-5 large-6"
+            data-equalizer-watch
+          >
             <h1>27.08.2021</h1>
             <div class="termine__main__wrapper">
               <h3>BÖBLINGEN</h3>
@@ -473,7 +457,10 @@
               </p>
             </div>
           </div>
-          <div class="termine__main__right cell small-12 medium-5 large-6">
+          <div
+            class="termine__main__right cell small-12 medium-5 large-6"
+            data-equalizer-watch
+          >
             <h1>06.–08.09.<br />2022</h1>
             <div class="termine__main__wrapper">
               <h3>ESSEN</h3>
@@ -491,7 +478,7 @@
     </section>
 
     <section class="newsletter grid-x">
-      <div class="newsletter__info medium-4">
+      <div class="newsletter__info small-10 large-4">
         <h1>Abonnieren Sie unsere Verbands-Neuigkeiten!</h1>
         <p>
           Ficia quati nos aut perit, sintesti dollam hil explabo. Raeribus aped
@@ -499,7 +486,7 @@
           ovitassin necto venimi, consed maximus
         </p>
       </div>
-      <form action="#" class="medium-7">
+      <form action="#" class="small-10 large-7">
         <input type="email" id="email" name="email" placeholder="E-Mail" />
         <div class="newsletter__form-footer">
           <div class="newsletter__form-dsgvo">

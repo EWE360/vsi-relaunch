@@ -284,7 +284,7 @@ header {
 }
 
 .news-box__layer {
-  width: 40%;
+  width: 55vmin;
   background: var(--main-color);
   mix-blend-mode: multiply;
   border-radius: 15px;
@@ -298,20 +298,20 @@ header {
 
 .news-box__content {
   position: absolute;
-  width: 28%;
+  width: 55vmin;
   /* height: 500px; */
   padding: 4%;
 }
 
 .news-box__content h4 {
   margin-bottom: 5%;
-  font-size: max(0.6rem, 0.8vmax);
+  font-size: max(0.8rem, 1vmax);
   font-weight: 500;
 }
 
 .news-box__content h1 {
   width: 90%;
-  font-size: max(0.7rem, 1.7vmax);
+  font-size: max(1.2rem, 1.7vmax);
   font-weight: 500;
   margin-bottom: 5%;
 }
@@ -319,7 +319,7 @@ header {
 .news-box__content p {
   width: 90%;
   line-height: 1.5rem;
-  font-size: max(10px, 0.9vw);
+  font-size: max(0.8rem, 1vw);
   margin-bottom: 5%;
 }
 
@@ -344,7 +344,7 @@ header {
 }
 
 .news-box__content button img {
-  height: 2vh;
+  width: 10%;
   /* margin-top: 5px; */
   margin-right: 5px;
 }
@@ -404,17 +404,16 @@ header {
 
 .about {
   display: flex;
+  justify-content: center;
   width: 100vw;
-  /* height: 90vh; */
   max-width: 100%;
-  padding: 150px 0;
+  padding: 10% 0;
 }
 
 .about__info {
-  width: 700px;
   min-height: 80%;
-  margin-right: 30px;
   color: var(--main-color);
+  padding: 20px 0;
 }
 
 .about__info h4 {
@@ -430,7 +429,6 @@ header {
 }
 
 .about__info p:not(.about__info__read-more) {
-  /* width: 580px; */
   line-height: max(1.5rem, 2.5vmax);
   font-size: max(0.8rem, 1.2vmax);
   color: var(--font-color-dark);
@@ -452,6 +450,7 @@ header {
   display: flex;
   width: 100%;
   min-height: 40vmin;
+  padding: 80px 0;
   background: var(--main-color);
   mix-blend-mode: multiply;
 }
@@ -481,12 +480,13 @@ header {
   width: 100%;
   margin-bottom: 3%;
   font-weight: 500;
-  font-size: max(1rem, 2.2vw);
+  font-size: max(0.8rem, 2.2vmax);
   line-height: max(1.6rem, 3vmax);
+  padding: 0 15%;
 }
 
 .members__info__author {
-  width: 100%;
+  width: 90%;
   font-size: max(0.7rem, 1.2vmax);
   text-align: right;
 }
@@ -526,7 +526,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 73%;
-  height: 500px;
+  padding: 30px 0;
   background: white;
   margin: 0 auto;
   color: var(--main-color);
@@ -641,8 +641,7 @@ header {
   width: 100vw;
   min-height: 90vh;
   max-width: 100%;
-  padding: 50px;
-  /* background-image: url("../img/nachhaltigkeit-background.png"); */
+  padding: 50px 0;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--main-color);
@@ -660,7 +659,6 @@ header {
 }
 
 .nachhaltigkeit__panel {
-  width: 73%;
   height: auto;
   padding: 50px 40px 50px 40px;
   background: rgba(255, 255, 255, 0.9);
@@ -720,7 +718,7 @@ header {
 .news {
   width: 100vw;
   max-width: 100%;
-  padding: 50px 0 40px 0;
+  padding: 50px 15px;
 }
 
 .news h1 {
@@ -732,7 +730,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 20%;
+  min-height: 20%;
   padding: 0 30px 0 0;
   font-size: max(0.8rem, 1.5vmax);
   font-weight: 500;
@@ -741,7 +739,7 @@ header {
 
 .news__header__right {
   width: 40%;
-  height: 20%;
+  min-height: 20%;
   padding-left: 20px;
   font-size: 1.8rem;
   font-weight: 500;
@@ -777,6 +775,8 @@ header {
 
 .news__main {
   display: flex;
+  justify-content: center;
+  /* width: 100%; */
 }
 
 .news__content {
@@ -836,9 +836,10 @@ header {
   width: 100%;
 }
 
+.news__header__left,
 .news__content__top__main,
 .news__content__bottom__wrapper {
-  margin-left: 10px;
+   padding: 0 15px;
 }
 
 .news__content__top__wrapper {
@@ -894,7 +895,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 68px;
+  height: 10vmin;
   color: var(--font-color-dark);
   list-style-type: none;
   border-bottom: 1px solid var(--main-color);
@@ -935,7 +936,7 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   padding: 0 20px;
   margin-bottom: 40px;
   color: var(--main-color);
@@ -973,7 +974,8 @@ header {
 }
 
 .termine__main__content h1 {
-  padding-right: 15px;
+  width: 30%;
+  margin-right: 10px;
   font-size: max(0.8rem, 1.7vmax);
 }
 
@@ -991,11 +993,8 @@ header {
 .termine__main__left,
 .termine__main__right {
   display: flex;
+  margin-bottom: 20px;
 }
-
-/* .termine__main__left {
-  margin-right: 20px;
-} */
 
 .termine__main__left h1,
 .termine__main__left h3,
@@ -1007,8 +1006,7 @@ header {
 
 .termine__main__wrapper {
   width: 100%;
-  height: 100%;
-  /* margin-left: 20px; */
+  min-height: 100%;
   padding: 0 20px;
   border-left: 1px solid var(--main-color);
 }
@@ -1045,7 +1043,8 @@ header {
   justify-content: center;
   width: 45%;
   height: 100%;
-  margin-right: 40px;
+  padding-right: 15px;
+  margin-bottom: 20px;
   color: white;
 }
 
@@ -1067,7 +1066,6 @@ header {
   justify-content: center;
   align-items: center;
   width: 90%;
-  /* margin-left: 70px; */
   padding: 80px 0 30px 0;
   background: white;
 }
@@ -1081,6 +1079,7 @@ header {
 .newsletter form input:not([type="checkbox"]) {
   width: 90%;
   height: 2.5vmax;
+  min-height: 30px;
   margin-bottom: 10px;
   padding: 0 10px;
   border: 1px solid rgb(226, 226, 226);
@@ -1092,7 +1091,7 @@ header {
 
 .newsletter__form-dsgvo {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
   padding-left: 5%;
 }
@@ -1101,8 +1100,8 @@ header {
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   margin: 0;
   border: 1px solid lightgray;
   cursor: pointer;
@@ -1115,11 +1114,11 @@ header {
 .newsletter__form-dsgvo input:checked:before {
   content: "";
   display: block;
-  width: 17px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   position: absolute;
   top: 3px;
-  left: 2px;
+  left: 3px;
   background: none var(--main-color);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1138,10 +1137,10 @@ header {
 }
 
 .newsletter__form-footer button {
-  width: 25%;
+  min-width: 25%;
   margin-top: 30px;
   margin-right: 10%;
-  padding: 15px;
+  padding: min(15px, 1.5vmax);
   font-size: max(0.8rem, 1.2vmax);
   font-weight: bold;
   color: white;
@@ -1254,6 +1253,53 @@ footer {
 
 /* MEDIA QUERIES --------------------------------------------------------------------------- */
 
+/* SMALL SCREENS LANDSCAPE */
+
+@media only screen and (max-width: 43em) and (orientation: landscape) {
+  .news-box__layer {
+    display: none;
+  }
+
+  .news-box__content {
+    display: none;
+  }
+
+  .teaser .quick-navi {
+    width: 50px;
+    height: 180px;
+  }
+
+  .teaser .quick-navi button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .teaser .quick-navi img {
+    height: 30px;
+  }
+
+  .news__content__top__wrapper > img {
+    display: none;
+  }
+  
+  .news__content__bottom > img {
+    display: none;
+  }
+}
+
+/* MEDIUM SCREENS LANDSCAPE */
+
+@media only screen and (min-width: 40em) {
+  .about__info {
+    padding: 0;
+    /* margin-right: 20px; */
+  }
+
+  .members__info__cite {
+    padding: 0;
+  }
+
+
 /* LARGE SCREENS */
 @media only screen and (min-width: 64.063em) {
   .header {
@@ -1302,6 +1348,10 @@ footer {
 
   .newsletter {
     padding: 10vmin 150px 10vmin 230px;
+  }
+
+  .newsletter__info {
+    margin-right: 40px;
   }
 
   footer {
