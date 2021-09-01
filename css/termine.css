@@ -370,7 +370,7 @@ header {
 }
 
 .veranstaltungen__wrapper h2 {
-  font-size: max(0.8rem, 1.6vmax);
+  font-size: max(1rem, 1.6vmax);
   font-weight: bold;
 }
 
@@ -407,13 +407,14 @@ header {
   display: flex;
   padding: 10px 20px;
   color: var(--main-color);
-  font-size: max(0.6rem, 1.1vmax);
+  font-size: max(0.8rem, 1.1vmax);
   font-weight: bold;
   border: 1px solid var(--main-color);
 }
 
 .veranstaltungen__infos img {
   width: 1.3vmax;
+  min-width: 20px;
   margin-right: 5px;
 }
 
@@ -425,11 +426,12 @@ header {
 
 .veranstaltungen__kalender img {
   width: 2.5vmax;
+  min-width: 30px;
   margin-right: 10px;
 }
 
 .veranstaltungen__kalender p {
-  font-size: max(0.6rem, 1vmax);
+  font-size: max(0.8rem, 1vmax);
   color: var(--main-color);
   font-weight: bold;
 }

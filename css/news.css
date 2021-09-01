@@ -199,8 +199,7 @@ header {
 }
 
 .event__title p {
-  font-size: max(0.6rem, 1.1vmax);
-  line-height: 1.8vmax;
+  font-size: max(0.8rem, 1.1vmax);
 }
 
 /* EVENT BODY */
@@ -245,11 +244,6 @@ header {
   color: var(--main-color);
 }
 
-.event__content-wrapper__column-right {
-  /* width: 50%; */
-  margin-top: 280px;
-}
-
 .event__content-wrapper__column-right img {
   max-width: 400px;
 }
@@ -257,8 +251,7 @@ header {
 .event__content-wrapper__column-right > p {
   max-width: 400px;
   margin-top: 40px;
-  font-size: max(0.6rem, 1.1vmax);
-  line-height: 1.8vmax;
+  font-size: max(0.8rem, 1.1vmax);
 }
 
 .event__content-wrapper__calendar-wrapper {
@@ -390,7 +383,8 @@ header {
 
 .sign-up__form-footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 85%;
   margin-top: 40px;
 }
@@ -404,6 +398,7 @@ header {
   width: 15%;
   min-width: 100px;
   height: 50px;
+  margin-bottom: 20px;
   font-size: max(0.8rem, 1.2vmax);
   font-weight: bold;
   color: white;
@@ -456,7 +451,7 @@ header {
   justify-content: center;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
-  padding: 50px 0 80px 200px;
+  padding: 5% 0 5% 20%;
 }
 
 .news__bottom__counterpart h1 {
@@ -468,7 +463,7 @@ header {
 .news__bottom__counterpart__wrapper {
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .news__bottom__counterpart img {
@@ -587,6 +582,42 @@ footer {
   font-size: max(0.8rem, 1.1vmax);
   font-weight: 600;
 }
+
+/* SMALL SCREENS LANDSCAPE */
+
+@media only screen and (max-width: 43em) and (orientation: landscape) {
+  .event__content-wrapper__column-right {
+    padding-top: 50px;
+  }
+
+  .sign-up__form-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sign-up__form-footer__sign-in {
+    margin-bottom: 0;
+  }
+}
+
+/* MEDIUM SCREENS */
+
+@media only screen and (min-width: 40em) {
+  .event__content-wrapper__column-right {
+    padding-top: 50px;
+  }
+
+  .sign-up__form-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sign-up__form-footer__sign-in {
+    margin-bottom: 0;
+  }
+}
+
+/* LARGE SCREENS */
 
 @media only screen and (min-width: 64.063em) {
   .header {
