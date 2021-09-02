@@ -22,6 +22,26 @@
   padding: 0;
 }
 
+h1 {
+  font-size: max(1.2rem, 2.8vmax);
+}
+
+h2 {
+  font-size: max(1.1rem, 1.9vmax);
+}
+
+h3 {
+  font-size: max(1rem, 1.4vmax);
+}
+
+h4 {
+  font-size: max(1rem, 1.1vmax);
+}
+
+p {
+  font-size: max(0.8rem, 1vmax);
+}
+
 body {
   font-family: Roboto;
   color: var(--font-color-dark);
@@ -415,4 +435,413 @@ body {
   width: 1.5vmax;
   margin-top: 5px;
   margin-right: 15px;
+}
+
+/* VERBAND LINK-BOX SECTION */
+
+.verband {
+  width: 100vw;
+  max-width: 100%;
+  padding: 3% 5% 3% 10%;
+}
+
+.verband__wrapper__content {
+  padding: 0 0 5% 0;
+  color: var(--main-color);
+}
+
+.verband__wrapper__content > img {
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.verband__wrapper a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.verband__wrapper__text h2 {
+  font-size: max(1.2rem, 1.9vmax);
+}
+
+.verband__wrapper__text > p {
+  width: 90%;
+  margin-bottom: 3%;
+  font-size: max(0.8rem, 1vmax);
+  color: var(--font-color-dark);
+}
+
+.verband__wrapper__read-more p {
+  font-size: max(0.8rem, 1.1vmax);
+  font-weight: bold;
+}
+
+.verband__wrapper__read-more img {
+  width: 4%;
+  margin-right: 5px;
+}
+
+/* VERBAND GESCHÄFTSSTELLE SECTION */
+
+.verband__geschaeftsstelle {
+  padding: 3% 0 3% 10%;
+  color: var(--main-color);
+}
+
+.verband__geschaeftsstelle__content > img {
+  height: 75%;
+  margin-left: 3%;
+}
+
+.verband__geschaeftsstelle__content__text h3 {
+  font-size: max(1rem, 1.1vmax);
+}
+
+.verband__geschaeftsstelle__content__text h1 {
+  font-size: max(1.2rem, 2.8vmax);
+}
+
+.verband__geschaeftsstelle__content__text h4 {
+  font-size: max(1rem, 1vmax);
+  font-weight: bold;
+}
+
+.verband__geschaeftsstelle__content__text p {
+  font-size: max(0.8rem, 1vmax);
+  color: var(--font-color-dark);
+}
+
+.verband__geschaeftsstelle__content__map img {
+  margin-bottom: 5%;
+}
+
+.verband__geschaeftsstelle__map__button button {
+  min-width: 25%;
+  margin-top: 5%;
+  padding: 5% max(15px, 1.5vmax);
+  font-size: max(0.8rem, 1.2vmax);
+  font-weight: bold;
+  color: white;
+  background: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* PUBLIKATIONEN SECTION */
+
+.publikationen {
+  padding: 3% 0 3% 10%;
+  color: var(--main-color);
+}
+
+.publikationen__wrapper {
+  margin-bottom: 5%;
+}
+
+.publikationen__wrapper img {
+  width: 70%;
+}
+
+.publikationen__wrapper > p {
+  width: 70%;
+  padding: 5% 0;
+  color: var(--font-color-dark);
+}
+
+.publikationen__wrapper__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: var(--main-color);
+}
+
+.publikationen__wrapper__read-more {
+  width: 50%;
+}
+
+.publikationen__wrapper__read-more p {
+  font-size: max(0.8rem, 1.1vmax);
+  font-weight: bold;
+}
+
+.publikationen__wrapper__read-more img {
+  width: 15%;
+  margin-right: 5px;
+}
+
+.publikationen__wrapper__bottom button {
+  min-width: 25%;
+  padding: min(15px, 1.5vmax);
+  font-size: max(0.8rem, 1.2vmax);
+  font-weight: bold;
+  color: white;
+  background: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* SCHMIERSTOFFE REIBUNG SECTION */
+
+.schmierstoffe__reibung {
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  padding: 3% 0 3% 10%;
+}
+
+.schmierstoffe__reibung__text {
+  min-height: 80%;
+  color: var(--main-color);
+}
+
+.schmierstoffe__reibung__text h2 {
+  font-size: max(1.1rem, 1.9vmax);
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.schmierstoffe__reibung__text p:not(.schmierstoffe__reibung__read-more) {
+  font-size: max(0.8rem, 1vmax);
+  color: var(--font-color-dark);
+}
+
+.schmierstoffe__reibung__read-more {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 3%;
+  padding-right: 30px;
+  font-family: Roboto-bold;
+  font-size: max(0.8rem, 1.3vmax);
+  color: var(--main-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.schmierstoffe__reibung__read-more img {
+  width: 5%;
+  min-width: 15px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.schmierstoffe__reibung__read-more:hover img {
+  animation: pulsating 2s ease-in-out infinite;
+}
+
+.schmierstoffe__reibung__image {
+  margin-bottom: 5%;
+}
+
+/* SCHMIERSTOFFE KORROSIONSSCHUTZ SECTION */
+
+.schmierstoffe__korrosionsschutz {
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  padding: 3% 0 3% 10%;
+}
+
+.schmierstoffe__korrosionsschutz__text {
+  min-height: 80%;
+  color: var(--main-color);
+}
+
+.schmierstoffe__korrosionsschutz__text h2 {
+  font-size: max(1.1rem, 1.9vmax);
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.schmierstoffe__korrosionsschutz__text
+  p:not(.schmierstoffe__korrosionsschutz__read-more) {
+  font-size: max(0.8rem, 1vmax);
+  color: var(--font-color-dark);
+}
+
+.schmierstoffe__korrosionsschutz__read-more {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 3%;
+  padding-right: 30px;
+  font-family: Roboto-bold;
+  font-size: max(0.8rem, 1.3vmax);
+  color: var(--main-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.schmierstoffe__korrosionsschutz__read-more img {
+  width: 5%;
+  min-width: 15px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.schmierstoffe__korrosionsschutz__read-more:hover img {
+  animation: pulsating 2s ease-in-out infinite;
+}
+
+.schmierstoffe__korrosionsschutz__image {
+  margin-bottom: 5%;
+}
+
+/* SCHMIERSTOFFE NACHHALTIGKEIT SECTION */
+
+.schmierstoffe__nasch {
+  width: 100vw;
+  max-width: 100%;
+  padding: 3% 0 3% 10%;
+}
+
+.schmierstoffe__nasch__columnLeft > img {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.schmierstoffe__nasch a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.schmierstoffe__nasch a:hover img {
+  animation: shake 2s ease-in-out infinite;
+}
+
+.schmierstoffe__nasch__columnLeft {
+  color: var(--font-color-dark);
+}
+
+.schmierstoffe__nasch ul {
+  width: 80%;
+  margin: 0 0 10% 0;
+}
+
+.schmierstoffe__nasch__columnLeft ul img {
+  width: 1.5vmax;
+}
+
+.schmierstoffe__nasch__columnLeft ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5vh 0;
+  font-size: max(0.8rem, 1.3vmax);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.schmierstoffe__nasch__columnRight {
+  color: var(--main-color);
+}
+
+.schmierstoffe__nasch__columnRight p {
+  color: var(--font-color-dark);
+}
+
+.schmierstoffe__nasch__columnRight p:first-of-type {
+  padding: 5% 0 3% 0;
+}
+
+.schmierstoffe__nasch__columnRight h3 {
+  font-weight: bold;
+}
+
+/* SMALL SCREENS LANDSCAPE */
+
+@media only screen and (max-width: 43em) and (orientation: landscape) {
+  .publikationen__wrapper__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .publikationen__wrapper__read-more {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .publikationen__wrapper__read-more p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* MEDIUM SCREENS */
+
+@media only screen and (min-width: 40em) {
+  .verband {
+    padding: 3% 0 3% 20%;
+  }
+
+  .verband__geschaeftsstelle {
+    padding: 3% 5% 3% 20%;
+  }
+
+  .publikationen {
+    padding: 3% 5% 3% 20%;
+  }
+
+  .publikationen__wrapper__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .publikationen__wrapper__read-more {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .publikationen__wrapper__read-more p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .schmierstoffe__reibung {
+    padding: 3% 0 3% 20%;
+  }
+
+  .schmierstoffe__korrosionsschutz {
+    padding: 3% 0 3% 20%;
+  }
+
+  .schmierstoffe__nasch {
+    padding: 3% 5% 3% 20%;
+  }
+}
+
+/* LARGE SCREENS */
+@media only screen and (min-width: 64.063em) {
+  .verband__geschaeftsstelle__content__map {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 5%;
+  }
+
+  .publikationen__wrapper__bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .publikationen__wrapper__read-more {
+    width: 70%;
+  }
+
+  .publikationen__wrapper__read-more p {
+    width: 100%;
+    text-align: initial;
+  }
+
+  .schmierstoffe__nasch__columnLeft img {
+    width: 60%;
+  }
+
+  .schmierstoffe__nasch ul {
+    width: 60%;
+    margin: 0 0 10% 0;
+  }
 }
